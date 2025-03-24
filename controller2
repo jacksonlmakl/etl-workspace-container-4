@@ -1,0 +1,11 @@
+schedule: '* * * * *'
+s3:
+  - name: ''
+  - access_key: ''
+  - secret_key: ''
+steps:
+  - name: Replicate
+    execute: replicate.py
+  - name: Tranform
+    execute: table1.sql
+    database: demo
